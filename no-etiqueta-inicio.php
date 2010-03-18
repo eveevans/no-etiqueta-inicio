@@ -57,13 +57,13 @@ function register_mysettings() {
 function no_etiqueta_inicio() {
 ?>
 <div class="wrap">
-<h2>Etiquetas que no apareceran en inicio</h2>
+<h2>Etiquetas de los post que no apareceran en Home</h2>
 
 <form method="post" action="options.php">
     <?php settings_fields( 'etiqueta_no_inicio_settings' ); ?>
     <table class="form-table">
         <tr valign="top">
-        <th scope="row">Nombre de las Etiquetas (separados por coma) : </th>
+        <th scope="row">Nombre de las etiquetas (separados por coma) : </th>
         <td><input type="text" name="n_etiquetas" value="<?php echo get_option('n_etiquetas'); ?>" /></td>
         </tr>
          
